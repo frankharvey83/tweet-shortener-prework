@@ -38,7 +38,7 @@ truncated_tweet = ""
     truncated_tweet = tweet
   elsif selective_tweet_shortener(tweet).length > 140
     truncated_tweet << selective_tweet_shortener(tweet)[0...137] + "..."
-  else 
+  else
     truncated_tweet = selective_tweet_shortener(tweet)
   end
   truncated_tweet
