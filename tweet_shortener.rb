@@ -15,10 +15,5 @@ def dictionary
 end
 
 def word_substituter(tweet)
-tweet_array = []
-
-tweet.each do |i|
-  tweet_array << i
-end
-binding.pry
+tweet_array = tweet.split
 end
