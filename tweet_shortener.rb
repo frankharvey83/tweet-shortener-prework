@@ -1,6 +1,6 @@
 require 'pry'
 
-dictionary =
+def dictionary =
 {
 "hello" => 'hi',
 "to" =>' 2',
@@ -13,9 +13,10 @@ dictionary =
 "at" => '@',
 "and" => '&'
 }
+end
 
 def word_substituter(tweet)
 
-  tweet.split.collect {|word| dictionary.keys.include?(word.downcase) ? 
+  tweet.split.collect {|word| dictionary.keys.include?(word.downcase) ?
     word = dictionary[word.downcase] : word}
       end
