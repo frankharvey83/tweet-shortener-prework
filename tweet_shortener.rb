@@ -16,10 +16,13 @@ def word_substituter(tweet)
   "at" => '@',
   "and" => '&'
   }
+  
 tweet_array = tweet.split
 tweet_array.each do |i|
     if dictionary.keys.include?(i)
-    puts "#{dictionary[i].values}"
+    dictionary.each do |key, value|
+        tweet_array.map { |j| j == key ? value : j }
+      end
     end
   end
 end
