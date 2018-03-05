@@ -22,9 +22,9 @@ tweet_array.each do |i|
     if dictionary.keys.include?(i)
     dictionary.each do |key, value|
       if i == key
-        puts "#{value}"
-
+        
       end
     end
   end
+
 end
