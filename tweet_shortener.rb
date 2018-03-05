@@ -22,9 +22,23 @@ tweet_array.each do |i|
     if dictionary.keys.include?(i)
     dictionary.each do |key, value|
       if i == key
-        
+        tweet_array[i] = value
+      else
+        i
       end
     end
   end
-
+  tweet_array
 end
+
+# tweet_array = tweet.split
+# tweet_array.each do |i|
+#     if dictionary.keys.include?(i)
+#     dictionary.each do |key, value|
+#       if i == key
+#
+#       end
+#     end
+#   end
+#
+# end
