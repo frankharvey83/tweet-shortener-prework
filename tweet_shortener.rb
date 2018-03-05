@@ -35,6 +35,7 @@ end
 def shortened_tweet_truncator(tweet)
   shortened_tweet = word_substituter(tweet)
   if shortened_tweet.length > 140
+    binding.pry
     shortened_tweet.slice(shortened_tweet.length, -1)
   elsif shortened_tweet <= 140
     tweet
